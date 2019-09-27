@@ -13,6 +13,7 @@ Quizá quieras refactorizar el código primero.
 ## Proyectos base
 
 El repositorio contiene dos proyectos base sobre los que se puede realizar la kata (uno en Java y otro en .NET Core con C#).
+Además se proporcionan otras plantillas en otros lenguajes. Animamos a quien quiera colaborar con una plantilla que no dude en hacerlo.
 
 ### .NET Core
 
@@ -41,10 +42,16 @@ Para ejecutar los test, basta con ejecutar en consola el comando `mvn test` en l
 
 El proyecto se puede abrir con los IDE habituales.
 
+
+### Otros lenguajes
+
+Existen plantillas proporcionadas por colaboradores en otro lenguajes como Scala, con las que también podeís realizar la kata.
+No dudeis en abrir una PR si quereis contribuir con plantillas en otros lenguajes.
+
 ## Soluciones
 
 En el repositorio hemos habilitado una carpeta `solutions` en las que podeís aportar vuestras soluciones que hayáis implementado en la kata y asi compartir y discutir diferentes aproximaciones/soluciones.
 
-Cualquiera puede clonar el repositorio, crear una nueva carpeta con su solución dentro de la carpeta correspondiente (`dotnet-core`, `java` u otra si os atreveis con otro lenguaje 😜) y posteriormente abrir una PR contra este repositorio. Os animamos a subir vuestra solución o comentar las soluciones de otros.
+Cualquiera puede clonar el repositorio, crear una nueva carpeta con su solución dentro de la carpeta correspondiente (`dotnet-core`, `java`, `scala` u otra si os atreveis con otro lenguaje 😜) y posteriormente abrir una PR contra este repositorio. Os animamos a subir vuestra solución o comentar las soluciones de otros.
 
 ***Nota**: es importante que cada solución este en una carpeta nueva y con un nombre no existente todavía.*
