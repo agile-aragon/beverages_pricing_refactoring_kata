@@ -4,6 +4,7 @@ import beverages.*;
 import org.junit.Test;
 import toppings.Cinnamon;
 import toppings.Cream;
+import toppings.InvalidToppingException;
 import toppings.Milk;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -52,7 +53,7 @@ public class BeveragesPricingTest {
 
 
     @Test
-    public void computes_hot_chocolate_with_cream_price_2() {
+    public void computes_hot_chocolate_with_cream_price() {
         HotChocolate hotChocolate = new HotChocolate();
         hotChocolate.with(new Cream());
         assertThat(hotChocolate.price(),  is(closeTo(1.60, 0.001)));
@@ -63,5 +64,11 @@ public class BeveragesPricingTest {
         Coffee coffee = new Coffee();
         coffee.with(new Cinnamon());
         assertThat(coffee.price(), is(closeTo(1.25, 0.001)));
+    }
+
+    @Test(expected = InvalidToppingException.class)
+    public void should_not_allow_tea_with_cinnamon() {
+        Tea tea = new Tea();
+        tea.with(new Cinnamon());
     }
 }
