@@ -1,5 +1,5 @@
 abstract class Beverage(complements: List[Complement]) {
-  val rules: List[Boolean] = List.empty
+  lazy val rules: List[Boolean] = List.empty
 
 
   if(rules.forall(p => p == true)){
